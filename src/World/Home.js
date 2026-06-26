@@ -12,7 +12,7 @@ const WALL_POSITIONS = [
   { side: 'left',  z:  11 },
   { side: 'right', z:  11 },
   { side: 'left',  z:   0 },
-  { side: 'right', z:   2 },
+  { side: 'right', z:   0.5 },
   { side: 'left',  z: -11 },
 ]
 
