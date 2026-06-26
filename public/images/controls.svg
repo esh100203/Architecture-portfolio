@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" fill="none">
+  <style>
+    text { font-family: 'Josefin Sans', sans-serif; font-size: 10px; fill: white; letter-spacing: 2px; }
+    rect { stroke: white; stroke-width: 1; fill: rgba(255,255,255,0.05); rx: 4; }
+    polygon { fill: white; }
+  </style>
+  <!-- W key -->
+  <rect x="55" y="2" width="22" height="22" rx="3"/>
+  <text x="66" y="18" text-anchor="middle">W</text>
+  <!-- A key -->
+  <rect x="29" y="28" width="22" height="22" rx="3"/>
+  <text x="40" y="44" text-anchor="middle">A</text>
+  <!-- S key -->
+  <rect x="55" y="28" width="22" height="22" rx="3"/>
+  <text x="66" y="44" text-anchor="middle">S</text>
+  <!-- D key -->
+  <rect x="81" y="28" width="22" height="22" rx="3"/>
+  <text x="92" y="44" text-anchor="middle">D</text>
+  <!-- label -->
+  <text x="155" y="34" text-anchor="middle" font-size="9" opacity="0.6">MOVE</text>
+</svg>
