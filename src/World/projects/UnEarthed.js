@@ -85,15 +85,15 @@ export function buildUnEarthedPortal() {
       <!-- Details -->
       <div class="ue_details_section">
         <div class="ue_detail_item">
-          <img src="assets/projects/unearthed/detail-1.png" alt="Detail 1" class="ue_detail_img" />
+          <img src="assets/projects/unearthed/detail-1b.jpg" alt="Detail 1" class="ue_detail_img" />
           <span class="ue_detail_title">ETFE Cushion Panel</span>
         </div>
         <div class="ue_detail_item">
-          <img src="assets/projects/unearthed/detail-2.png" alt="Detail 2" class="ue_detail_img" />
+          <img src="assets/projects/unearthed/detail-2b.jpg" alt="Detail 2" class="ue_detail_img" />
           <span class="ue_detail_title">Rock Auger Anchor Foundation</span>
         </div>
         <div class="ue_detail_item">
-          <img src="assets/projects/unearthed/detail-3.png" alt="Detail 3" class="ue_detail_img" />
+          <img src="assets/projects/unearthed/detail-3b.jpg" alt="Detail 3" class="ue_detail_img" />
           <span class="ue_detail_title">Spin-Lock Anchor Foundation</span>
         </div>
       </div>
