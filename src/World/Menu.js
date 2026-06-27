@@ -12,8 +12,8 @@ export default class Menu {
     this._mainLinks = document.querySelectorAll('.menu_main_links a')
     this._linkItems = document.querySelectorAll('#menu_projects_list li a')
     this._canvasContainer = document.querySelector('.menu_canvas_container')
-    this._contactBtn = document.querySelector('.menu_contact')
-    this._instaBtn   = document.querySelector('.menu_insta')
+    this._contactBtn = null
+    this._instaBtn   = null
     this._searchInput = document.querySelector('#search_input')
 
     this._populateLinks()
@@ -83,11 +83,6 @@ export default class Menu {
       tl.fromTo(a, { y: '-100%' }, { y: '0%', duration: 0.4, ease: 'sine.inOut' }, 0.2 + i * 0.05)
     })
 
-    // Contact + insta
-    tl.to([this._contactBtn, this._instaBtn], {
-      opacity: 0.6, duration: 0.3, ease: 'sine.inOut', pointerEvents: 'all'
-    }, 0.5)
-
     // Search
     tl.to('.search_bar', { opacity: 1, duration: 0.3, ease: 'sine.inOut' }, 0.5)
 
@@ -117,7 +112,6 @@ export default class Menu {
     // Reset contact panel
     document.getElementById('menu_contact_block')?.classList.remove('open')
     document.getElementById('menu_projects_list').style.display = ''
-    tl.to([this._contactBtn, this._instaBtn], { opacity: 0, duration: 0.2, pointerEvents: 'none' }, 0)
     tl.to('.search_bar', { opacity: 0, duration: 0.2 }, 0)
     tl.to(this._canvasContainer, { opacity: 0, duration: 0.4, ease: 'sine.inOut' }, 0)
 
@@ -146,16 +140,6 @@ export default class Menu {
       document.getElementById('menu_contact_block')?.classList.remove('open')
     })
 
-    // Contact mailto
-    this._contactBtn.addEventListener('click', () => {
-      window.location.href = 'mailto:eshithahebbale@gmail.com'
-    })
-    this._contactBtn.addEventListener('mouseenter', () => {
-      if (this.experience.world?.personnage) this.experience.world.personnage.sayHi = true
-    })
-    this._contactBtn.addEventListener('mouseleave', () => {
-      if (this.experience.world?.personnage) this.experience.world.personnage.sayHi = false
-    })
 
     // Search filter
     this._searchInput?.addEventListener('input', () => {
