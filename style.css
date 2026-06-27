@@ -2181,6 +2181,42 @@ h1 {
   padding: 8px 24px;
   gap: 24px;
 }
+.in_drawing_trio {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: #f4f2ee;
+  overflow: hidden;
+  padding: 8px 8px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.in_trio_item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.in_trio_item img {
+  max-height: calc(100% - 30px);
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.in_trio_label {
+  font-family: var(--font_family);
+  font-size: 13rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+  background: rgba(244, 242, 238, 0.9);
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+}
 .in_drawing_half {
   flex: 1;
   display: flex;

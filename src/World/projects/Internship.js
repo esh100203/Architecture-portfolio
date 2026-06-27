@@ -115,10 +115,20 @@ export function buildInternshipPortal() {
         </div>
       </section>
 
-      <!-- SSB drawings -->
-      <div class="in_drawing_pair">
-        <div class="in_drawing_half"><img src="assets/projects/internship/ssb_ground.jpg" class="in_drawing_img" /></div>
-        <div class="in_drawing_half"><img src="assets/projects/internship/ssb_stilt.jpg"  class="in_drawing_img" /></div>
+      <!-- SSB floor plans -->
+      <div class="in_drawing_trio">
+        <div class="in_trio_item">
+          <img src="assets/projects/internship/ssb_gf.png" class="in_drawing_img" />
+          <span class="in_trio_label">Ground Floor</span>
+        </div>
+        <div class="in_trio_item">
+          <img src="assets/projects/internship/ssb_ff.png" class="in_drawing_img" />
+          <span class="in_trio_label">First Floor</span>
+        </div>
+        <div class="in_trio_item">
+          <img src="assets/projects/internship/ssb_sf.png" class="in_drawing_img" />
+          <span class="in_trio_label">Second Floor</span>
+        </div>
       </div>
       <div class="in_drawing_wrap"><img src="assets/projects/internship/ssb_dw1.jpg" class="in_drawing_img" /></div>
 
