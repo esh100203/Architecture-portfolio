@@ -3,8 +3,8 @@ import * as THREE from 'three'
 export default class Renderer {
   constructor(experience) {
     this.experience = experience
-    this.sizes = experience.sizes
-    this.scene = experience.scene
+    this.sizes  = experience.sizes
+    this.scene  = experience.scene
     this.camera = experience.camera
     this.canvas = experience.canvas
 
@@ -13,15 +13,20 @@ export default class Renderer {
   }
 
   _setup() {
-    const pixelRatio = this.sizes.pixelRatio
+    // Low-end = fewer than 6 logical cores or pixel ratio <= 1
+    const lowEnd = (navigator.hardwareConcurrency || 4) < 6
+    const pixelRatio = lowEnd
+      ? Math.min(window.devicePixelRatio, 1)
+      : Math.min(window.devicePixelRatio, 1.5)
+
     this.instance = new THREE.WebGLRenderer({
       canvas: this.canvas,
-      antialias: pixelRatio < 1.5,
-      powerPreference: 'high-performance'
+      antialias: !lowEnd,
+      powerPreference: 'high-performance',
     })
     this.instance.setSize(this.sizes.width, this.sizes.height)
     this.instance.setPixelRatio(pixelRatio)
-    this.instance.shadowMap.enabled = true
+    this.instance.shadowMap.enabled = !lowEnd
     this.instance.shadowMap.type = THREE.BasicShadowMap
     this.instance.outputColorSpace = THREE.SRGBColorSpace
     this.instance.toneMapping = THREE.ACESFilmicToneMapping
@@ -30,7 +35,6 @@ export default class Renderer {
 
   _resize() {
     this.instance.setSize(this.sizes.width, this.sizes.height)
-    this.instance.setPixelRatio(this.sizes.pixelRatio)
   }
 
   update() {

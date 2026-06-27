@@ -22,18 +22,33 @@ export default class Experience {
     this.camera  = new Camera(this)
     this.renderer = new Renderer(this)
 
-    // Show canvas
     this.canvas.style.opacity = '1'
 
-    // Start loader, then build world
     this.loader = new Loader()
     this.loader.on('ready', () => {
       this.world = new World(this)
       this._showSceneHint()
+      this._initIdleControl()
     })
 
-    // RAF loop
     this.time.on('tick', () => this._update())
+  }
+
+  _initIdleControl() {
+    let idleTimer = null
+    const IDLE_MS = 2000
+
+    const wake = () => {
+      this.time.wake()
+      clearTimeout(idleTimer)
+      idleTimer = setTimeout(() => this.time.sleep(), IDLE_MS)
+    }
+
+    ;['keydown','keyup','mousemove','mousedown','touchstart','touchmove','wheel'].forEach(evt => {
+      window.addEventListener(evt, wake, { passive: true })
+    })
+
+    wake()
   }
 
   _showSceneHint() {
@@ -41,12 +56,9 @@ export default class Experience {
     const hint    = document.getElementById('scene_hint')
     if (!overlay || !hint) return
 
-    // Fade in
     setTimeout(() => {
       overlay.classList.add('active')
       hint.classList.add('active')
-
-      // Hold 2s then fade out
       setTimeout(() => {
         overlay.classList.add('fade')
         hint.classList.add('fade')
