@@ -251,6 +251,13 @@ h1 {
   height: 100%; padding: 50rem;
   display: flex;
   justify-content: center;
+  background: transparent;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+.menu_text.active {
+  background: rgba(244, 242, 238, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .search_bar {
@@ -276,7 +283,7 @@ h1 {
 }
 .menu_main_links span { position: relative; width: 100%; }
 
-.menu_links { height: 95%; width: 200rem; overflow-y: scroll; }
+.menu_links { height: 95%; width: 240rem; overflow-y: scroll; }
 .menu_links ul li { overflow: hidden; position: relative; }
 .menu_links ul li a { color: #444; font-family: var(--font_family); }
 .menu_links::-webkit-scrollbar { display: none; }
@@ -315,10 +322,20 @@ h1 {
 .menu_contact_block {
   display: none;
   flex-direction: column;
-  gap: 10rem;
-  padding: 8rem 0;
+  gap: 12rem;
+  padding: 0;
+  overflow: visible;
 }
 .menu_contact_block.open { display: flex; }
+.menu_contact_tagline {
+  font-family: var(--font_family);
+  font-size: 20rem;
+  font-style: italic;
+  color: #222;
+  line-height: 1.4;
+  padding-bottom: 12rem;
+  border-bottom: 1px solid #ddd;
+}
 .menu_contact_line {
   color: #666;
   font-family: var(--font_family);

@@ -56,6 +56,7 @@ export default class Menu {
 
     // Enable menu pointer events
     this._menuEl.style.pointerEvents = 'all'
+    this._menuText.classList.add('active')
     document.querySelector('.menu_close').style.display = 'block'
 
     // Pause character
@@ -101,6 +102,7 @@ export default class Menu {
     if (!this.isOpen) return
     this.isOpen = false
 
+    this._menuText.classList.remove('active')
     const tl = gsap.timeline({ onComplete: () => {
       this._menuEl.style.pointerEvents = 'none'
       document.querySelector('.menu_close').style.display = 'none'
