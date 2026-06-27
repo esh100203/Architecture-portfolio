@@ -53,7 +53,7 @@ export function buildInternshipPortal() {
           </div>
         </div>
         <div class="in_project_img_wrap">
-          <img src="assets/projects/internship/img_aneja.png" class="in_project_img" />
+          <img src="assets/projects/internship/img_aneja.jpg" class="in_project_img" />
         </div>
       </section>
 
@@ -82,7 +82,7 @@ export function buildInternshipPortal() {
           </div>
         </div>
         <div class="in_project_img_wrap">
-          <img src="assets/projects/internship/img_sesha.png" class="in_project_img" />
+          <img src="assets/projects/internship/img_sesha.jpg" class="in_project_img" />
         </div>
       </section>
 
@@ -111,7 +111,7 @@ export function buildInternshipPortal() {
           </div>
         </div>
         <div class="in_project_img_wrap">
-          <img src="assets/projects/internship/img_ssb.png" class="in_project_img" />
+          <img src="assets/projects/internship/img_ssb.jpg" class="in_project_img" />
         </div>
       </section>
 
