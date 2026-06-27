@@ -67,8 +67,8 @@ export function buildCityLivingRoomPortal() {
             <p>The archive itself is a space of unlearning, located underground due to its need for containment, enabling the super structure to act as an extension of the city. It houses maps, scripts, recordings, and curated displays that invite visitors to question, confront, and reframe accepted narratives acting as a repository of contested memory and forgotten knowledge, challenging dominant perspectives and encouraging new ways of seeing the city, its water systems, its people, and its spaces.</p>
           </div>
           <div class="clr_plan_details">
-            <img src="assets/projects/citylivingroom/detail-1.png" alt="Detail 1" class="clr_plan_detail_img" />
-            <img src="assets/projects/citylivingroom/detail-2.png" alt="Detail 2" class="clr_plan_detail_img" />
+            <img src="assets/projects/citylivingroom/detail-1b.jpg" alt="Detail 1" class="clr_plan_detail_img" />
+            <img src="assets/projects/citylivingroom/detail-2b.jpg" alt="Detail 2" class="clr_plan_detail_img" />
           </div>
         </div>
       </div>
