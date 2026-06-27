@@ -1,8 +1,8 @@
-export function buildUnEarthedPortal() {
+﻿export function buildUnEarthedPortal() {
   return `
     <div class="pp_header">
       <span class="pp_header_title">Journey to Destination</span>
-      <button class="pp_back_btn">✕ Close</button>
+      <button class="pp_back_btn">âœ• Close</button>
     </div>
     <div class="pp_scroll">
 
@@ -27,7 +27,7 @@ export function buildUnEarthedPortal() {
           </div>
         </div>
         <div class="ue_right_col">
-          <img src="assets/projects/unearthed/thumbnail.jpg" alt="Journey to Destination" class="ue_hero_img" />
+          <img loading="lazy" src="assets/projects/unearthed/thumbnail.jpg" alt="Journey to Destination" class="ue_hero_img" />
         </div>
       </section>
 
@@ -41,21 +41,21 @@ export function buildUnEarthedPortal() {
       <!-- Iterations reel -->
       <section class="ue_reel_section" id="ue_reel_section">
         <div class="ue_reel_strip" id="ue_reel_strip">
-          <img src="assets/projects/unearthed/iterations-combined.jpg" class="ue_reel_img" loading="lazy" />
+          <img loading="lazy" src="assets/projects/unearthed/iterations-combined.jpg" class="ue_reel_img" loading="lazy" />
         </div>
       </section>
 
       <!-- Sketchup view + conceptss -->
       <div class="ue_sketch_section">
-        <img src="assets/projects/unearthed/sketchup-view.jpg" alt="Sketchup View" class="ue_sketch_img" />
+        <img loading="lazy" src="assets/projects/unearthed/sketchup-view.jpg" alt="Sketchup View" class="ue_sketch_img" />
         <div class="ue_concepts_col">
-          <img src="assets/projects/unearthed/conceptss.png" alt="Concepts" class="ue_conceptss_img" />
+          <img loading="lazy" src="assets/projects/unearthed/conceptss.png" alt="Concepts" class="ue_conceptss_img" />
         </div>
       </div>
 
       <!-- Image 1 + text -->
       <div class="ue_img1_section">
-        <img src="assets/projects/unearthed/1.png" alt="View 1" class="ue_img1" />
+        <img loading="lazy" src="assets/projects/unearthed/1.png" alt="View 1" class="ue_img1" />
         <div class="ue_img1_text">
           <p>The design blurs the line between built and landscape, allowing the form to emerge from the terrain. The building invites horizontal pauses and observation with vertical transitions. Shifts in floor plates respond to the contours, creating a dynamic rhythm of movement, compression, release and fragmented, shifting views of the quarry while transitioning between programmatic layers.</p>
           <p>Raised above ground, the form minimizes excavation, preserves rock formations, and reduces heat gain. Porous, layered blocks are shaped around voids that act as light wells, breezeways, and gathering spaces, becoming transitional zones where indoors and outdoors merge, guiding movement.</p>
@@ -65,35 +65,35 @@ export function buildUnEarthedPortal() {
 
       <!-- Plan + render 2 & 3 -->
       <div class="ue_plan_section">
-        <img src="assets/projects/unearthed/plan.png" alt="Plan" class="ue_plan_img"
+        <img loading="lazy" src="assets/projects/unearthed/plan.png" alt="Plan" class="ue_plan_img"
           onload="(function(img){var r=document.querySelector('.ue_plan_renders');if(r)r.style.height=img.offsetHeight+'px';})(this)" />
         <div class="ue_plan_renders">
-          <img src="assets/projects/unearthed/render-2.jpg" alt="Render 2" class="ue_plan_render_img" />
-          <img src="assets/projects/unearthed/render-3.jpg" alt="Render 3" class="ue_plan_render_img" />
+          <img loading="lazy" src="assets/projects/unearthed/render-2.jpg" alt="Render 2" class="ue_plan_render_img" />
+          <img loading="lazy" src="assets/projects/unearthed/render-3.jpg" alt="Render 3" class="ue_plan_render_img" />
         </div>
       </div>
 
       <!-- Sections reel -->
       <section class="ue_sections_reel_section" id="ue_sections_reel_section">
         <div class="ue_sections_reel_strip" id="ue_sections_reel_strip">
-          <img src="assets/projects/unearthed/section-1.png" class="ue_section_img" loading="lazy" />
-          <img src="assets/projects/unearthed/section-2.png" class="ue_section_img" loading="lazy" />
-          <img src="assets/projects/unearthed/section-3.png" class="ue_section_img" loading="lazy" />
+          <img loading="lazy" src="assets/projects/unearthed/section-1.png" class="ue_section_img" loading="lazy" />
+          <img loading="lazy" src="assets/projects/unearthed/section-2.png" class="ue_section_img" loading="lazy" />
+          <img loading="lazy" src="assets/projects/unearthed/section-3.png" class="ue_section_img" loading="lazy" />
         </div>
       </section>
 
       <!-- Details -->
       <div class="ue_details_section">
         <div class="ue_detail_item">
-          <img src="assets/projects/unearthed/detail-1b.jpg" alt="Detail 1" class="ue_detail_img" />
+          <img loading="lazy" src="assets/projects/unearthed/detail-1b.jpg" alt="Detail 1" class="ue_detail_img" />
           <span class="ue_detail_title">ETFE Cushion Panel</span>
         </div>
         <div class="ue_detail_item">
-          <img src="assets/projects/unearthed/detail-2b.jpg" alt="Detail 2" class="ue_detail_img" />
+          <img loading="lazy" src="assets/projects/unearthed/detail-2b.jpg" alt="Detail 2" class="ue_detail_img" />
           <span class="ue_detail_title">Rock Auger Anchor Foundation</span>
         </div>
         <div class="ue_detail_item">
-          <img src="assets/projects/unearthed/detail-3b.jpg" alt="Detail 3" class="ue_detail_img" />
+          <img loading="lazy" src="assets/projects/unearthed/detail-3b.jpg" alt="Detail 3" class="ue_detail_img" />
           <span class="ue_detail_title">Spin-Lock Anchor Foundation</span>
         </div>
       </div>
@@ -106,3 +106,4 @@ export function buildUnEarthedPortal() {
     </div>
   `
 }
+

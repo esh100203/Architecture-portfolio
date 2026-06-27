@@ -1,6 +1,6 @@
-export function buildNeeradiPortal() {
+﻿export function buildNeeradiPortal() {
   const img = (n) =>
-    `<img src="assets/projects/neeradi/paintings/${n}.jpg" alt="Painting ${n}" class="nr_reel_img" loading="lazy" />`
+    `<img loading="lazy" src="assets/projects/neeradi/paintings/${n}.jpg" alt="Painting ${n}" class="nr_reel_img" loading="lazy" />`
 
   const caption = (text) =>
     `<div class="nr_reel_caption"><p>${text}</p></div>`
@@ -16,12 +16,12 @@ export function buildNeeradiPortal() {
 
   return `
     <div class="pp_header">
-      <span class="pp_header_title">Neeradi — The Water's Way</span>
-      <button class="pp_back_btn">✕ Close</button>
+      <span class="pp_header_title">Neeradi â€” The Water's Way</span>
+      <button class="pp_back_btn">âœ• Close</button>
     </div>
     <div class="pp_scroll">
 
-      <!-- Section 1: Hero — left text panel, right full-bleed image -->
+      <!-- Section 1: Hero â€” left text panel, right full-bleed image -->
       <section class="nr_hero">
         <div class="nr_left_col">
           <div class="nr_top_block">
@@ -42,7 +42,7 @@ export function buildNeeradiPortal() {
           </div>
         </div>
         <div class="nr_right_col">
-          <img src="assets/projects/neeradi/thumbnail2.jpeg" alt="Neeradi" class="nr_hero_img" />
+          <img loading="lazy" src="assets/projects/neeradi/thumbnail2.jpeg" alt="Neeradi" class="nr_hero_img" />
         </div>
       </section>
 
@@ -66,8 +66,8 @@ export function buildNeeradiPortal() {
       <div class="nr_map_wrapper">
         <div class="nr_map_section">
           <div class="nr_map_image_col">
-            <h3 class="nr_map_heading">Hemavathi River — Terrain and Floodplain Profile</h3>
-            <img src="assets/projects/neeradi/hemavathi-map.png" alt="Hemavathi Map" class="nr_map_img" />
+            <h3 class="nr_map_heading">Hemavathi River â€” Terrain and Floodplain Profile</h3>
+            <img loading="lazy" src="assets/projects/neeradi/hemavathi-map.png" alt="Hemavathi Map" class="nr_map_img" />
           </div>
           <div class="nr_map_side_text">
             <p>These settlements weren't just functional but they were cultural ecosystems where the river held a visual, physical, and spiritual presence in everyday life.</p>
@@ -79,7 +79,7 @@ export function buildNeeradiPortal() {
           </div>
         </div>
         <div class="nr_context_text nr_map_text">
-          The documentation implies the need for adaptable and scalable systems that can transform with changing conditions, much like the community's own adaptive practices of reclaiming and releasing land with each flood. The river's edge is not a singular site but a network of interactions—ritual, ecology, and memory interwoven. Architectural implications thus move toward networked spatial systems, where small, dispersed, and interconnected interventions sustain the larger landscape narrative. Drawing from the cyclic nature of the river, structures are conceived to transform, disappear or re-emerge with seasonal shifts.
+          The documentation implies the need for adaptable and scalable systems that can transform with changing conditions, much like the community's own adaptive practices of reclaiming and releasing land with each flood. The river's edge is not a singular site but a network of interactionsâ€”ritual, ecology, and memory interwoven. Architectural implications thus move toward networked spatial systems, where small, dispersed, and interconnected interventions sustain the larger landscape narrative. Drawing from the cyclic nature of the river, structures are conceived to transform, disappear or re-emerge with seasonal shifts.
         </div>
       </div>
 
@@ -87,32 +87,32 @@ export function buildNeeradiPortal() {
       <div class="nr_renders_grid">
         <div class="nr_renders_row">
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-1.png" alt="Render 1" />
+            <img loading="lazy" src="assets/projects/neeradi/render-1.png" alt="Render 1" />
             <span class="nr_render_label">Bell Mandapa</span>
           </div>
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-2.png" alt="Render 2" />
+            <img loading="lazy" src="assets/projects/neeradi/render-2.png" alt="Render 2" />
             <span class="nr_render_label">Theertotsava Mandapa</span>
           </div>
         </div>
         <div class="nr_renders_row">
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-3.png" alt="Render 3" class="nr_render_full" />
-            <span class="nr_render_label">Top View — During Summer</span>
+            <img loading="lazy" src="assets/projects/neeradi/render-3.png" alt="Render 3" class="nr_render_full" />
+            <span class="nr_render_label">Top View â€” During Summer</span>
           </div>
         </div>
       </div>
 
       <!-- Section 5: Sections 1 bg full width -->
       <div class="nr_fullwidth_img">
-        <img src="assets/projects/neeradi/sections-1-bg.png" alt="Sections" />
+        <img loading="lazy" src="assets/projects/neeradi/sections-1-bg.png" alt="Sections" />
       </div>
 
       <!-- Section 6: Mavinakere hydrology -->
       <div class="nr_mavinakere_section">
         <div class="nr_mavinakere_left">
-          <h3 class="nr_mavinakere_heading">Mavinakere — Hydrology and Displacement</h3>
-          <img src="assets/projects/neeradi/mavinakere-hydrology.png" alt="Mavinakere Hydrology" class="nr_mavinakere_img" />
+          <h3 class="nr_mavinakere_heading">Mavinakere â€” Hydrology and Displacement</h3>
+          <img loading="lazy" src="assets/projects/neeradi/mavinakere-hydrology.png" alt="Mavinakere Hydrology" class="nr_mavinakere_img" />
         </div>
         <div class="nr_mavinakere_right">
           <p class="nr_mavinakere_text">Mavinakere village, located along the Hemavathi River, is one of the communities displaced during the construction of the Hemavathi Dam in 1979. The relocation significantly altered the village's spatial and social fabric, though the local temple has remained an anchor point, sustaining cultural continuity and community identity. Historically dependent on the river for agriculture and daily needs, the village's interaction with the waterbody was drastically reshaped post-dam, with new settlements and altered access to water resources.</p>
@@ -121,13 +121,13 @@ export function buildNeeradiPortal() {
 
       <!-- Section 7: Plan + Sections 2 -->
       <div class="nr_plan_sections_grid">
-        <img src="assets/projects/neeradi/plan.png" alt="Plan" class="nr_plan_img" />
+        <img loading="lazy" src="assets/projects/neeradi/plan.png" alt="Plan" class="nr_plan_img" />
         <div class="nr_plan_right_col">
           <div class="nr_plan_text">
             <p>A spiritual energy mapping traces the patterns of movement and gathering across different times of the day. The Temple, Market Space and Community Space emerged as primary nodes of activity, informing the placement of ancillary pavilions. Their locations were further refined through the site's terrain, hydrology, vegetation and visual connections, creating a framework that responds simultaneously to human activity, ecological systems and the cultural landscape.</p>
             <p>The design strategy draws from the understanding that permanence along the Hemavathi has always been an illusion. Here, architecture becomes an act of negotiation rather than control. Conceived as a constellation of pavilions, mandapas, markets, ghats and community spaces woven between the temple and the river, the intervention unfolds as a gradual journey through a landscape of thresholds. Programs emerge from the life of the village itself which included ritual gatherings, seasonal markets, statue offerings, communal celebrations, rest and observation. Movement through the site is shaped by seasonal water calendars, spiritual energy fields and collective memory, transforming the riverfront into a living archive of stories, rituals and return.</p>
           </div>
-          <img src="assets/projects/neeradi/sections-2.png" alt="Sections 2" class="nr_sections2_img" />
+          <img loading="lazy" src="assets/projects/neeradi/sections-2.png" alt="Sections 2" class="nr_sections2_img" />
         </div>
       </div>
 
@@ -135,21 +135,21 @@ export function buildNeeradiPortal() {
       <div class="nr_renders2_grid">
         <div class="nr_renders2_row">
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-4.png" alt="Render 4" />
-            <span class="nr_render_label">Community Space — Summer Extension</span>
+            <img loading="lazy" src="assets/projects/neeradi/render-4.png" alt="Render 4" />
+            <span class="nr_render_label">Community Space â€” Summer Extension</span>
           </div>
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-5.png" alt="Render 5" />
-            <span class="nr_render_label">Statue Pavilions — During Monsoon</span>
+            <img loading="lazy" src="assets/projects/neeradi/render-5.png" alt="Render 5" />
+            <span class="nr_render_label">Statue Pavilions â€” During Monsoon</span>
           </div>
         </div>
         <div class="nr_renders2_row">
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-6.png" alt="Render 6" />
+            <img loading="lazy" src="assets/projects/neeradi/render-6.png" alt="Render 6" />
             <span class="nr_render_label">Kalyana Mandapa</span>
           </div>
           <div class="nr_render_cell">
-            <img src="assets/projects/neeradi/render-7.png" alt="Render 7" />
+            <img loading="lazy" src="assets/projects/neeradi/render-7.png" alt="Render 7" />
             <span class="nr_render_label">Santhe Space</span>
           </div>
         </div>
@@ -158,7 +158,7 @@ export function buildNeeradiPortal() {
       <!-- Section 9: Details -->
       <div class="nr_details_section">
         <div class="nr_detail_cell">
-          <img src="assets/projects/neeradi/detail-2.png" alt="Detail 2" class="nr_detail_img" />
+          <img loading="lazy" src="assets/projects/neeradi/detail-2.png" alt="Detail 2" class="nr_detail_img" />
         </div>
         <div class="nr_detail_right_group">
           <div class="nr_detail_text">
@@ -167,10 +167,10 @@ export function buildNeeradiPortal() {
           </div>
           <div class="nr_detail_imgs_row">
             <div class="nr_detail_cell">
-              <img src="assets/projects/neeradi/detail-3.png" alt="Detail 3" class="nr_detail_img" />
+              <img loading="lazy" src="assets/projects/neeradi/detail-3.png" alt="Detail 3" class="nr_detail_img" />
             </div>
             <div class="nr_detail_cell">
-              <img src="assets/projects/neeradi/detail-1.png" alt="Detail 1" class="nr_detail_img" />
+              <img loading="lazy" src="assets/projects/neeradi/detail-1.png" alt="Detail 1" class="nr_detail_img" />
             </div>
           </div>
         </div>
@@ -184,3 +184,4 @@ export function buildNeeradiPortal() {
     </div>
   `
 }
+

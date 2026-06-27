@@ -1,8 +1,8 @@
-export function buildInternshipPortal() {
+﻿export function buildInternshipPortal() {
   return `
     <div class="pp_header">
-      <span class="pp_header_title">Internship — Architecture Dialogue</span>
-      <button class="pp_back_btn">✕ Close</button>
+      <span class="pp_header_title">Internship â€” Architecture Dialogue</span>
+      <button class="pp_back_btn">âœ• Close</button>
     </div>
     <div class="pp_scroll">
 
@@ -27,17 +27,17 @@ export function buildInternshipPortal() {
             </div>
             <div class="in_meta_row">
               <span class="in_meta_label">Typology</span>
-              <span class="in_meta_value">Residential — GFC & Technical Documentation</span>
+              <span class="in_meta_value">Residential â€” GFC & Technical Documentation</span>
             </div>
           </div>
           </div>
 
           <div class="in_desc_bottom">
-            Architecture Dialogue runs every project through a rigorous cycle of research, dialogue, and documentation. Over six months, I worked within the GFC pipeline across three live residential projects — learning that a good drawing is not just accurate, but a form of conversation between the architect, the contractor, and the building itself.
+            Architecture Dialogue runs every project through a rigorous cycle of research, dialogue, and documentation. Over six months, I worked within the GFC pipeline across three live residential projects â€” learning that a good drawing is not just accurate, but a form of conversation between the architect, the contractor, and the building itself.
           </div>
         </div>
         <div class="in_right_col">
-          <img src="assets/projects/internship/img_team.jpg" class="in_hero_img" />
+          <img loading="lazy" src="assets/projects/internship/img_team.jpg" class="in_hero_img" />
         </div>
       </section>
 
@@ -53,21 +53,21 @@ export function buildInternshipPortal() {
           </div>
         </div>
         <div class="in_project_img_wrap">
-          <img src="assets/projects/internship/img_aneja.jpg" class="in_project_img" />
+          <img loading="lazy" src="assets/projects/internship/img_aneja.jpg" class="in_project_img" />
         </div>
       </section>
 
-      <!-- Amara Aneja drawings — aneja folder -->
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_106.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_107.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_201.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_202b.jpg"  class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_301.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_401.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_403.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_701a.jpg"  class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_801.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/an_1603b.jpg" class="in_drawing_img" /></div>
+      <!-- Amara Aneja drawings â€” aneja folder -->
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_106.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_107.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_201.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_202b.jpg"  class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_301.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_401.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_403.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_701a.jpg"  class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_801.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_1603b.jpg" class="in_drawing_img" /></div>
 
       <!-- 02 Amara Sesha -->
       <section class="in_project_section">
@@ -82,21 +82,21 @@ export function buildInternshipPortal() {
           </div>
         </div>
         <div class="in_project_img_wrap">
-          <img src="assets/projects/internship/img_sesha.jpg" class="in_project_img" />
+          <img loading="lazy" src="assets/projects/internship/img_sesha.jpg" class="in_project_img" />
         </div>
       </section>
 
-      <!-- Amara Sesha drawings — seshaa folder -->
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/aneja_401.jpg"   class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/aneja_1201.jpg"  class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/aneja_1302.jpg"  class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/aneja_1402.jpg"  class="in_drawing_img" /></div>
+      <!-- Amara Sesha drawings â€” seshaa folder -->
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_401.jpg"   class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1201.jpg"  class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1302.jpg"  class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1402.jpg"  class="in_drawing_img" /></div>
       <div class="in_drawing_pair">
-        <div class="in_drawing_half"><img src="assets/projects/internship/aneja_1402b.jpg" class="in_drawing_img" /></div>
-        <div class="in_drawing_half"><img src="assets/projects/internship/aneja_1407.jpg"  class="in_drawing_img" /></div>
+        <div class="in_drawing_half"><img loading="lazy" src="assets/projects/internship/aneja_1402b.jpg" class="in_drawing_img" /></div>
+        <div class="in_drawing_half"><img loading="lazy" src="assets/projects/internship/aneja_1407.jpg"  class="in_drawing_img" /></div>
       </div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/aneja_1408.jpg"  class="in_drawing_img" /></div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/aneja_1410.jpg"  class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1408.jpg"  class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1410.jpg"  class="in_drawing_img" /></div>
 
       <!-- 03 SSB Delhi -->
       <section class="in_project_section">
@@ -111,26 +111,26 @@ export function buildInternshipPortal() {
           </div>
         </div>
         <div class="in_project_img_wrap">
-          <img src="assets/projects/internship/img_ssb.jpg" class="in_project_img" />
+          <img loading="lazy" src="assets/projects/internship/img_ssb.jpg" class="in_project_img" />
         </div>
       </section>
 
       <!-- SSB floor plans -->
       <div class="in_drawing_trio">
         <div class="in_trio_item">
-          <img src="assets/projects/internship/ssb_gf.png" class="in_drawing_img" />
+          <img loading="lazy" src="assets/projects/internship/ssb_gf.png" class="in_drawing_img" />
           <span class="in_trio_label">Ground Floor</span>
         </div>
         <div class="in_trio_item">
-          <img src="assets/projects/internship/ssb_ff.png" class="in_drawing_img" />
+          <img loading="lazy" src="assets/projects/internship/ssb_ff.png" class="in_drawing_img" />
           <span class="in_trio_label">First Floor</span>
         </div>
         <div class="in_trio_item">
-          <img src="assets/projects/internship/ssb_sf.png" class="in_drawing_img" />
+          <img loading="lazy" src="assets/projects/internship/ssb_sf.png" class="in_drawing_img" />
           <span class="in_trio_label">Second Floor</span>
         </div>
       </div>
-      <div class="in_drawing_wrap"><img src="assets/projects/internship/ssb_dw1.jpg" class="in_drawing_img" /></div>
+      <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/ssb_dw1.jpg" class="in_drawing_img" /></div>
 
       <div class="tp_back_row">
         <button class="tp_back_btn pp_back_btn">Back to Gallery</button>
@@ -139,3 +139,4 @@ export function buildInternshipPortal() {
     </div>
   `
 }
+
