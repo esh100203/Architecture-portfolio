@@ -2,11 +2,13 @@ export default class Joystick {
   constructor(container) {
     this.dx = 0   // -1 left … +1 right
     this.dy = 0   // -1 up  … +1 down (screen space)
-    this.active = false
-    this.angle  = null   // game-world angle, matches Personnage angle convention
-    this.magnitude = 0   // 0..1
+    this.active  = false
+    this.forward = 0    // +1 forward, -1 backward (swipe up/down)
+    this.dAngle  = 0    // +1 rotate left, -1 rotate right (swipe left/right)
+    this.magnitude = 0  // 0..1
 
     const RADIUS = 55    // half of 110px base
+    const DEAD   = 8     // px dead zone before registering direction
 
     // DOM
     this._base   = document.createElement('div')
@@ -21,15 +23,14 @@ export default class Joystick {
 
     const onStart = e => {
       e.preventDefault()
-      if (touchId !== null) return          // only track one finger
+      if (touchId !== null) return
       const t = e.changedTouches[0]
       touchId = t.identifier
       originX = t.clientX
       originY = t.clientY
 
-      // Show base centred on touch
-      this._base.style.left   = (originX - RADIUS) + 'px'
-      this._base.style.top    = (originY - RADIUS) + 'px'
+      this._base.style.left    = (originX - RADIUS) + 'px'
+      this._base.style.top     = (originY - RADIUS) + 'px'
       this._base.style.display = 'block'
       this.active = true
     }
@@ -48,7 +49,6 @@ export default class Joystick {
       const hx = Math.cos(a) * clamp
       const hy = Math.sin(a) * clamp
 
-      // Move handle visually
       this._handle.style.transform =
         `translate(calc(-50% + ${hx}px), calc(-50% + ${hy}px))`
 
@@ -56,12 +56,20 @@ export default class Joystick {
       this.dy = hy / RADIUS
       this.magnitude = clamp / RADIUS
 
-      // Map screen-space (dx, dy) → game angle:
-      //   screen up   (dy=-1) → angle 0   (forward, -Z)
-      //   screen right(dx=+1) → angle -π/2 (strafe right, +X)
-      //   screen down (dy=+1) → angle π   (backward, +Z)
-      //   screen left (dx=-1) → angle +π/2 (strafe left, -X)
-      this.angle = dist > 6 ? Math.atan2(-this.dx, -this.dy) : null
+      if (dist < DEAD) {
+        this.forward = 0
+        this.dAngle  = 0
+        return
+      }
+
+      // Dominant axis: up/down → move forward/backward; left/right → rotate
+      if (Math.abs(rawY) >= Math.abs(rawX)) {
+        this.forward = rawY < 0 ? 1 : -1
+        this.dAngle  = 0
+      } else {
+        this.forward = 0
+        this.dAngle  = rawX < 0 ? 1 : -1   // left = +1 (CCW), right = -1 (CW)
+      }
     }
 
     const onEnd = e => {
@@ -69,7 +77,7 @@ export default class Joystick {
       if (!t) return
       touchId = null
       this.dx = 0; this.dy = 0
-      this.magnitude = 0; this.angle = null
+      this.magnitude = 0; this.forward = 0; this.dAngle = 0
       this.active = false
       this._handle.style.transform = 'translate(-50%, -50%)'
       this._base.style.display = 'none'

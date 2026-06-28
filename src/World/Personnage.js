@@ -126,8 +126,12 @@ export default class Personnage {
   }
 
   _getTankInput() {
-    if (this._joystick?.active && this._joystick.angle !== null) {
-      return { joystickAngle: this._joystick.angle, magnitude: this._joystick.magnitude ?? 1 }
+    if (this._joystick?.active) {
+      const forward = this._joystick.forward
+      const dAngle  = this._joystick.dAngle
+      if (forward !== 0 || dAngle !== 0) {
+        return { forward: forward * 2, dAngle: dAngle * 2, magnitude: this._joystick.magnitude ?? 1 }
+      }
     }
     const k = this.keyPressed
     const forward = (k.keyw || k.arrowup) ? 1 : (k.keys || k.arrowdown) ? -1 : 0
