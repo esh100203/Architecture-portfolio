@@ -21,7 +21,17 @@ export default class Joystick {
     let touchId = null
     let originX = 0, originY = 0
 
+    const isBlocked = () => {
+      // Don't intercept touches when a portal or menu is open
+      if (document.querySelector('.project_portal.open')) return true
+      const hint = document.getElementById('scene_blur_overlay')
+      if (hint && hint.style.opacity !== '0' && hint.style.display !== 'none') return true
+      if (document.querySelector('.menu_text.active')) return true
+      return false
+    }
+
     const onStart = e => {
+      if (isBlocked()) return
       e.preventDefault()
       if (touchId !== null) return
       const t = e.changedTouches[0]
@@ -83,9 +93,9 @@ export default class Joystick {
       this._base.style.display = 'none'
     }
 
-    container.addEventListener('touchstart',  onStart, { passive: false })
-    container.addEventListener('touchmove',   onMove,  { passive: false })
-    container.addEventListener('touchend',    onEnd,   { passive: false })
-    container.addEventListener('touchcancel', onEnd,   { passive: false })
+    window.addEventListener('touchstart',  onStart, { passive: false })
+    window.addEventListener('touchmove',   onMove,  { passive: false })
+    window.addEventListener('touchend',    onEnd,   { passive: false })
+    window.addEventListener('touchcancel', onEnd,   { passive: false })
   }
 }
