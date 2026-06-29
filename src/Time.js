@@ -7,10 +7,8 @@ export default class Time extends EventEmitter {
     this.current = this.start
     this.elapsed = 0
     this.delta   = 16
-    this._active = true
-    this._rafId  = null
     this._tick   = this._tick.bind(this)
-    this._rafId  = requestAnimationFrame(this._tick)
+    requestAnimationFrame(this._tick)
   }
 
   _tick() {
@@ -18,10 +16,7 @@ export default class Time extends EventEmitter {
     this.delta   = (now - this.current) / 1000
     this.current = now
     this.elapsed = (now - this.start) / 1000
-    if (this._active) this.trigger('tick')
-    this._rafId = requestAnimationFrame(this._tick)
+    this.trigger('tick')
+    requestAnimationFrame(this._tick)
   }
-
-  wake()  { this._active = true  }
-  sleep() { this._active = false }
 }

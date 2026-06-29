@@ -28,7 +28,6 @@ export default class Experience {
     this.loader.on('ready', () => {
       this.world = new World(this)
       this._showSceneHint()
-      this._initIdleControl()
     })
 
     this.time.on('tick', () => this._update())
