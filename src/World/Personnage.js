@@ -140,8 +140,14 @@ export default class Personnage {
 
   _animateLimbs(swing) {
     if (!this._leftLeg) return
-    this._leftLeg.rotation.x  =  swing
-    this._rightLeg.rotation.x = -swing
+    // Active leg swings fully; planted leg barely moves (0.1x) to simulate ground contact
+    if (swing >= 0) {
+      this._leftLeg.rotation.x  =  swing
+      this._rightLeg.rotation.x = -swing * 0.1
+    } else {
+      this._leftLeg.rotation.x  =  swing * 0.1
+      this._rightLeg.rotation.x = -swing
+    }
     this._leftArm.rotation.x  = -swing * 0.55
     this._rightArm.rotation.x =  swing * 0.55
   }
