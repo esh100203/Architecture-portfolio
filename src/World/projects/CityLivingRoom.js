@@ -2,7 +2,7 @@
   return `
     <div class="pp_header">
       <span class="pp_header_title">City's Living Room</span>
-      <button class="pp_back_btn">âœ• Close</button>
+      <button class="pp_back_btn">✕ Close</button>
     </div>
     <div class="pp_scroll">
 
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="clr_desc_bottom">
-            The footpath is more than just a path, it's a lived space of interaction, commerce and pause. This project reimagines that energy by shifting focus to the pedestrian's perspective â€” an open, inviting, and everyday social ground.
+            The footpath is more than just a path, it's a lived space of interaction, commerce and pause. This project reimagines that energy by shifting focus to the pedestrian's perspective "” an open, inviting, and everyday social ground.
           </div>
         </div>
         <div class="clr_right_col">
@@ -35,7 +35,7 @@
       <div class="clr_context_text">
         <p>Conceived as the City's Living Room, the project explores how architecture can foster community through an exploration of movement, light, shadow, compression, and release, the architecture creates a sequence of spaces that reveal themselves gradually, inviting people to linger, gather, and reconnect with the city and one another.</p>
         <p>Emerging from studies of pedestrian movement and socio-spatial behaviour, the project explores architecture as a series of spatial thresholds. The abstract models examine how planes, volumes, and voids can guide movement, frame views, and create moments of intimacy within the public realm.</p>
-        <p>Rather than functioning as a singular object, the architecture acts as an extension of the urban fabricâ€”blurring the boundaries between street, landscape, and built form. Spaces of pause are interwoven with paths of movement, transforming everyday circulation into opportunities for encounter and exchange. Through a careful balance of openness and enclosure, the project creates a human-scaled environment where social life can unfold organically, fostering a sense of belonging within the city.</p>
+        <p>Rather than functioning as a singular object, the architecture acts as an extension of the urban fabric"”blurring the boundaries between street, landscape, and built form. Spaces of pause are interwoven with paths of movement, transforming everyday circulation into opportunities for encounter and exchange. Through a careful balance of openness and enclosure, the project creates a human-scaled environment where social life can unfold organically, fostering a sense of belonging within the city.</p>
       </div>
 
       <!-- Concept images -->

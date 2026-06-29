@@ -2,7 +2,7 @@
   return `
     <div class="pp_header">
       <span class="pp_header_title">Journey to Destination</span>
-      <button class="pp_back_btn">âœ• Close</button>
+      <button class="pp_back_btn">✕ Close</button>
     </div>
     <div class="pp_scroll">
 

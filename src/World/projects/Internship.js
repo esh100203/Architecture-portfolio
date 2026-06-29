@@ -1,8 +1,8 @@
 ﻿export function buildInternshipPortal() {
   return `
     <div class="pp_header">
-      <span class="pp_header_title">Internship â€” Architecture Dialogue</span>
-      <button class="pp_back_btn">âœ• Close</button>
+      <span class="pp_header_title">Internship "” Architecture Dialogue</span>
+      <button class="pp_back_btn">✕ Close</button>
     </div>
     <div class="pp_scroll">
 
@@ -27,13 +27,13 @@
             </div>
             <div class="in_meta_row">
               <span class="in_meta_label">Typology</span>
-              <span class="in_meta_value">Residential â€” GFC & Technical Documentation</span>
+              <span class="in_meta_value">Residential "” GFC & Technical Documentation</span>
             </div>
           </div>
           </div>
 
           <div class="in_desc_bottom">
-            Architecture Dialogue runs every project through a rigorous cycle of research, dialogue, and documentation. Over six months, I worked within the GFC pipeline across three live residential projects â€” learning that a good drawing is not just accurate, but a form of conversation between the architect, the contractor, and the building itself.
+            Architecture Dialogue runs every project through a rigorous cycle of research, dialogue, and documentation. Over six months, I worked within the GFC pipeline across three live residential projects "” learning that a good drawing is not just accurate, but a form of conversation between the architect, the contractor, and the building itself.
           </div>
         </div>
         <div class="in_right_col">
@@ -57,7 +57,7 @@
         </div>
       </section>
 
-      <!-- Amara Aneja drawings â€” aneja folder -->
+      <!-- Amara Aneja drawings "” aneja folder -->
       <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_106.jpg"   class="in_drawing_img" /></div>
       <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_107.jpg"   class="in_drawing_img" /></div>
       <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/an_201.jpg"   class="in_drawing_img" /></div>
@@ -86,7 +86,7 @@
         </div>
       </section>
 
-      <!-- Amara Sesha drawings â€” seshaa folder -->
+      <!-- Amara Sesha drawings "” seshaa folder -->
       <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_401.jpg"   class="in_drawing_img" /></div>
       <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1201.jpg"  class="in_drawing_img" /></div>
       <div class="in_drawing_wrap"><img loading="lazy" src="assets/projects/internship/aneja_1302.jpg"  class="in_drawing_img" /></div>

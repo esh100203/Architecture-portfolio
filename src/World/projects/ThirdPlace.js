@@ -1,8 +1,8 @@
 ﻿export function buildThirdPlacePortal() {
   return `
     <div class="pp_header">
-      <span class="pp_header_title">The Third Place â€” Extension of the Streets</span>
-      <button class="pp_back_btn">âœ• Close</button>
+      <span class="pp_header_title">The Third Place — Extension of the Streets</span>
+      <button class="pp_back_btn">✕ Close</button>
     </div>
     <div class="pp_scroll">
 
