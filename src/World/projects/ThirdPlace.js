@@ -57,7 +57,7 @@
 
       <!-- Section 5: Section 2 clipped -->
       <div class="tp_siteplan_section" style="padding-top: 56px; overflow: hidden;">
-        <img loading="lazy" src="assets/projects/thirdplace/section-2b.png" alt="Section 2" class="tp_siteplan_img" style="width: calc(67% + 8px);" />
+        <img loading="lazy" src="assets/projects/thirdplace/section 2b.jpg" alt="Section 2" class="tp_siteplan_img" style="width: calc(67% + 8px);" />
       </div>
 
       <!-- Section 6: Plan + text + render 4 -->
@@ -80,7 +80,7 @@
           <img loading="lazy" src="assets/projects/thirdplace/render-3.png" alt="Render 3" class="tp_renders_row_img" style="object-position: right bottom;" />
         </div>
         <div class="tp_final_section1">
-          <img loading="lazy" src="assets/projects/thirdplace/section-1b.png" alt="Section 1" class="tp_final_section1_img" />
+          <img loading="lazy" src="assets/projects/thirdplace/section 1b.jpg" alt="Section 1" class="tp_final_section1_img" />
         </div>
         <div class="tp_back_row">
           <button class="tp_back_btn pp_back_btn">Back to Gallery</button>
