@@ -35,12 +35,12 @@ export default class Camera {
     const posAlpha  = 1 - Math.exp(-12 * safeDt)
     const lookAlpha = 1 - Math.exp(-9  * safeDt)
 
-    this._offset.set(0, 0, 2.4)
+    this._offset.set(0, 0, 3.2)
     this._offset.applyQuaternion(charQuat)
 
     this._targetPos.set(
       charPos.x + this._offset.x,
-      1.65,                          // fixed eye height — don't follow walk bob
+      2.2,                           // raised eye height for higher angle view
       charPos.z + this._offset.z
     )
     this.instance.position.lerp(this._targetPos, posAlpha)
@@ -51,7 +51,7 @@ export default class Camera {
     const lz = charPos.z + this._fwd.z * 5
 
     this._lookTarget.x += (lx - this._lookTarget.x) * lookAlpha
-    this._lookTarget.y += (0.9 - this._lookTarget.y) * lookAlpha
+    this._lookTarget.y += (0.6 - this._lookTarget.y) * lookAlpha
     this._lookTarget.z += (lz - this._lookTarget.z) * lookAlpha
 
     this.instance.lookAt(this._lookTarget)

@@ -27,7 +27,7 @@ export default class Personnage {
     this._stepInterval = 0.38
     this._isLeftFoot   = true
     this._footprints   = []
-    this._prevSin      = 0
+    this._prevSin      = -1
 
     // Animation phases
     this._walkPhase = 0

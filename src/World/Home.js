@@ -98,7 +98,7 @@ export default class Home {
 
       this.scene.add(group)
 
-      const circleX = isLeft ? -3.5 : 3.5
+      const circleX = isLeft ? -3.0 : 3.0
       this._frames.push({ frameMat, artMat, group, proj, circleX, circleZ: z })
     })
   }
@@ -111,13 +111,13 @@ export default class Home {
         this._auraRings.push(null)
         return
       }
-      const geo = new THREE.TorusGeometry(0.55, 0.022, 12, 80)
+      const geo = new THREE.TorusGeometry(0.55, 0.010, 12, 80)
       const mat = new THREE.MeshBasicMaterial({
-        color: 0x111111, transparent: true, opacity: 0, depthWrite: false
+        color: 0x2a2520, transparent: true, opacity: 0.35, depthWrite: false
       })
       const ring = new THREE.Mesh(geo, mat)
       ring.rotation.x = -Math.PI / 2
-      ring.position.set(f.circleX, 0.62, f.circleZ)
+      ring.position.set(f.circleX, 0.01, f.circleZ)
       this.scene.add(ring)
       f.auraRing = ring
       this._auraRings.push(ring)
@@ -164,15 +164,15 @@ export default class Home {
   _setActive(frame) {
     if (this._active === frame) return
 
-    // Hide previous frame's ring
+    // Hide previous frame's ring back to resting opacity
     if (this._active?.auraRing) {
-      gsap.to(this._active.auraRing.material, { opacity: 0, duration: 0.25 })
+      gsap.to(this._active.auraRing.material, { opacity: 0.35, duration: 0.25 })
     }
 
     this._active = frame
 
     if (frame) {
-      gsap.to(frame.auraRing.material, { opacity: 1, duration: 0.35, ease: 'power2.out' })
+      gsap.to(frame.auraRing.material, { opacity: 0.9, duration: 0.35, ease: 'power2.out' })
       this._promptEl.querySelector('.project_prompt_title').textContent = frame.proj.title
       this._promptEl.classList.add('visible')
     } else {

@@ -230,8 +230,8 @@ export default class Environment {
     })
 
     // ── Floor spotlight circles ────────────────────────────────────
-    const ringMat = new THREE.MeshStandardMaterial({ color: 0xccc9c4, roughness: 0.9 })
-    ;[[-3.5, -11], [3.5, -11], [-3.5, 0], [3.5, 0], [-3.5, 11], [3.5, 11]].forEach(([x, z]) => {
+    const ringMat = new THREE.MeshStandardMaterial({ color: 0x5a5550, roughness: 0.9 })
+    ;[[-3.0, -11], [3.0, -11], [-3.0, 0], [3.0, 0], [-3.0, 11], [3.0, 11]].forEach(([x, z]) => {
       const ring = new THREE.Mesh(new THREE.RingGeometry(0.44, 0.54, 40), ringMat)
       ring.rotation.x = -Math.PI / 2
       ring.position.set(x, 0.003, z)
