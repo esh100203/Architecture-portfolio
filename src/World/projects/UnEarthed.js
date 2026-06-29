@@ -55,7 +55,7 @@
 
       <!-- Image 1 + text -->
       <div class="ue_img1_section">
-        <img loading="lazy" src="assets/projects/unearthed/1.png" alt="View 1" class="ue_img1" />
+        <img loading="lazy" src="assets/projects/unearthed/1.jpg" alt="View 1" class="ue_img1" />
         <div class="ue_img1_text">
           <p>The design blurs the line between built and landscape, allowing the form to emerge from the terrain. The building invites horizontal pauses and observation with vertical transitions. Shifts in floor plates respond to the contours, creating a dynamic rhythm of movement, compression, release and fragmented, shifting views of the quarry while transitioning between programmatic layers.</p>
           <p>Raised above ground, the form minimizes excavation, preserves rock formations, and reduces heat gain. Porous, layered blocks are shaped around voids that act as light wells, breezeways, and gathering spaces, becoming transitional zones where indoors and outdoors merge, guiding movement.</p>
