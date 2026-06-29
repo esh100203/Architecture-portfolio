@@ -24,10 +24,10 @@ export default class Personnage {
 
     // Footprint state
     this._speedFactor  = 0
-    this._stepTimer    = 0
     this._stepInterval = 0.38
     this._isLeftFoot   = true
     this._footprints   = []
+    this._prevSin      = 0
 
     // Animation phases
     this._walkPhase = 0
@@ -189,15 +189,18 @@ export default class Personnage {
         this.group.position.x = Math.max(-3.5, Math.min(3.5,  this.group.position.x))
         this.group.position.z = Math.max(-14.5, Math.min(14.5, this.group.position.z))
 
-        this._stepTimer += dt
-        if (this._stepTimer >= this._stepInterval) {
-          this._stepTimer = 0
+        const prevSin = this._prevSin
+        this._walkPhase += dt * (Math.PI / this._stepInterval)
+        const nowSin = Math.sin(this._walkPhase)
+        this._prevSin = nowSin
+
+        // Spawn footprint exactly when the foot touches ground (sine crosses zero)
+        if (prevSin * nowSin < 0) {
           this._spawnFootprint()
         }
 
-        this._walkPhase += dt * (Math.PI / this._stepInterval)
         this._applyWalkBob(dt)
-        this._animateLimbs(Math.sin(this._walkPhase) * 0.38 * this._speedFactor)
+        this._animateLimbs(nowSin * 0.38 * this._speedFactor)
 
         this.currentAction = 'walk'
       } else {
@@ -216,6 +219,6 @@ export default class Personnage {
     this._footprints = this._footprints.filter(f => !f._done)
 
     // Camera
-    this.camera.follow(this.group.position, this.group.quaternion)
+    this.camera.follow(this.group.position, this.group.quaternion, dt)
   }
 }

@@ -29,30 +29,29 @@ export default class Camera {
     this.scene.add(this.instance)
   }
 
-  follow(charPos, charQuat) {
-    // ── Position: adult eye level, 1.2 units behind character ──
-    // +Z in character's local space = behind (character faces -Z)
+  follow(charPos, charQuat, dt = 0.016) {
+    const posAlpha  = 1 - Math.exp(-18 * dt)
+    const lookAlpha = 1 - Math.exp(-14 * dt)
+
     this._offset.set(0, 0, 2.4)
     this._offset.applyQuaternion(charQuat)
 
     this._targetPos.set(
       charPos.x + this._offset.x,
-      charPos.y + 1.65,          // adult eye height
+      charPos.y + 1.65,
       charPos.z + this._offset.z
     )
-    this.instance.position.lerp(this._targetPos, 0.14)
+    this.instance.position.lerp(this._targetPos, posAlpha)
 
-    // ── Look-at: ahead of character at mid-body height ──────────
     this._fwd.set(0, 0, -1).applyQuaternion(charQuat)
 
     const lx = charPos.x + this._fwd.x * 5
     const ly = charPos.y + 0.9
     const lz = charPos.z + this._fwd.z * 5
 
-    // Smooth pan — weighted lerp on the look target
-    this._lookTarget.x += (lx - this._lookTarget.x) * 0.10
-    this._lookTarget.y += (ly - this._lookTarget.y) * 0.10
-    this._lookTarget.z += (lz - this._lookTarget.z) * 0.10
+    this._lookTarget.x += (lx - this._lookTarget.x) * lookAlpha
+    this._lookTarget.y += (ly - this._lookTarget.y) * lookAlpha
+    this._lookTarget.z += (lz - this._lookTarget.z) * lookAlpha
 
     this.instance.lookAt(this._lookTarget)
   }
