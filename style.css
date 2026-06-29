@@ -974,6 +974,7 @@ h1 {
   height: auto;
   display: block;
   object-fit: contain;
+  mix-blend-mode: multiply;
   object-position: bottom left;
   max-height: 55%;
   mix-blend-mode: multiply;
