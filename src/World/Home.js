@@ -111,7 +111,7 @@ export default class Home {
         this._auraRings.push(null)
         return
       }
-      const geo = new THREE.TorusGeometry(0.55, 0.010, 12, 80)
+      const geo = new THREE.TorusGeometry(0.55, 0.005, 12, 80)
       const mat = new THREE.MeshBasicMaterial({
         color: 0x2a2520, transparent: true, opacity: 0.35, depthWrite: false
       })
