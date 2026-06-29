@@ -105,7 +105,7 @@
 
       <!-- Section 5: Sections 1 bg full width -->
       <div class="nr_fullwidth_img">
-        <img loading="lazy" src="assets/projects/neeradi/sections-1-bg.png" alt="Sections" />
+        <img loading="lazy" src="assets/projects/neeradi/sections-1-bg.jpg" alt="Sections" />
       </div>
 
       <!-- Section 6: Mavinakere hydrology -->
