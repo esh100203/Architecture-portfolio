@@ -62,7 +62,7 @@
 
       <!-- Section 6: Plan + text + render 4 -->
       <div class="tp_plan_section">
-        <img loading="lazy" src="assets/projects/thirdplace/plan.png" alt="Plan" class="tp_plan_img" id="tp_plan_img" onload="(function(img){var col=document.querySelector('.tp_plan_right_col');if(col)col.style.height=img.offsetHeight+'px';})(this)" />
+        <img loading="lazy" src="assets/projects/thirdplace/plan.jpg" alt="Plan" class="tp_plan_img" id="tp_plan_img" onload="(function(img){var col=document.querySelector('.tp_plan_right_col');if(col)col.style.height=img.offsetHeight+'px';})(this)" />
         <div class="tp_plan_right_col">
           <div class="tp_plan_desc">
             <p>The project creates open, inviting spaces that act as social extensions - places to gather, pause, or simply pass through. Rather than a building to be entered, it's an urban insert welcoming informal use, dissolving thresholds and encouraging spontaneous interaction.</p>

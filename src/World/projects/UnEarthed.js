@@ -65,7 +65,7 @@
 
       <!-- Plan + render 2 & 3 -->
       <div class="ue_plan_section">
-        <img loading="lazy" src="assets/projects/unearthed/plan.png" alt="Plan" class="ue_plan_img"
+        <img loading="lazy" src="assets/projects/unearthed/plan.jpg" alt="Plan" class="ue_plan_img"
           onload="(function(img){var r=document.querySelector('.ue_plan_renders');if(r)r.style.height=img.offsetHeight+'px';})(this)" />
         <div class="ue_plan_renders">
           <img loading="lazy" src="assets/projects/unearthed/render-2.jpg" alt="Render 2" class="ue_plan_render_img" />
