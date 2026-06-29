@@ -16,12 +16,12 @@
 
   return `
     <div class="pp_header">
-      <span class="pp_header_title">Neeradi â€” The Water's Way</span>
+      <span class="pp_header_title">Neeradi — The Water's Way</span>
       <button class="pp_back_btn">âœ• Close</button>
     </div>
     <div class="pp_scroll">
 
-      <!-- Section 1: Hero â€” left text panel, right full-bleed image -->
+      <!-- Section 1: Hero — left text panel, right full-bleed image -->
       <section class="nr_hero">
         <div class="nr_left_col">
           <div class="nr_top_block">
@@ -66,7 +66,7 @@
       <div class="nr_map_wrapper">
         <div class="nr_map_section">
           <div class="nr_map_image_col">
-            <h3 class="nr_map_heading">Hemavathi River â€” Terrain and Floodplain Profile</h3>
+            <h3 class="nr_map_heading">Hemavathi River — Terrain and Floodplain Profile</h3>
             <img loading="lazy" src="assets/projects/neeradi/hemavathi-map.png" alt="Hemavathi Map" class="nr_map_img" />
           </div>
           <div class="nr_map_side_text">
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="nr_context_text nr_map_text">
-          The documentation implies the need for adaptable and scalable systems that can transform with changing conditions, much like the community's own adaptive practices of reclaiming and releasing land with each flood. The river's edge is not a singular site but a network of interactionsâ€”ritual, ecology, and memory interwoven. Architectural implications thus move toward networked spatial systems, where small, dispersed, and interconnected interventions sustain the larger landscape narrative. Drawing from the cyclic nature of the river, structures are conceived to transform, disappear or re-emerge with seasonal shifts.
+          The documentation implies the need for adaptable and scalable systems that can transform with changing conditions, much like the community's own adaptive practices of reclaiming and releasing land with each flood. The river's edge is not a singular site but a network of interactions—ritual, ecology, and memory interwoven. Architectural implications thus move toward networked spatial systems, where small, dispersed, and interconnected interventions sustain the larger landscape narrative. Drawing from the cyclic nature of the river, structures are conceived to transform, disappear or re-emerge with seasonal shifts.
         </div>
       </div>
 
@@ -98,7 +98,7 @@
         <div class="nr_renders_row">
           <div class="nr_render_cell">
             <img loading="lazy" src="assets/projects/neeradi/render-3.png" alt="Render 3" class="nr_render_full" />
-            <span class="nr_render_label">Top View â€” During Summer</span>
+            <span class="nr_render_label">Top View — During Summer</span>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
       <!-- Section 6: Mavinakere hydrology -->
       <div class="nr_mavinakere_section">
         <div class="nr_mavinakere_left">
-          <h3 class="nr_mavinakere_heading">Mavinakere â€” Hydrology and Displacement</h3>
+          <h3 class="nr_mavinakere_heading">Mavinakere — Hydrology and Displacement</h3>
           <img loading="lazy" src="assets/projects/neeradi/mavinakere-hydrology.png" alt="Mavinakere Hydrology" class="nr_mavinakere_img" />
         </div>
         <div class="nr_mavinakere_right">
@@ -127,7 +127,7 @@
             <p>A spiritual energy mapping traces the patterns of movement and gathering across different times of the day. The Temple, Market Space and Community Space emerged as primary nodes of activity, informing the placement of ancillary pavilions. Their locations were further refined through the site's terrain, hydrology, vegetation and visual connections, creating a framework that responds simultaneously to human activity, ecological systems and the cultural landscape.</p>
             <p>The design strategy draws from the understanding that permanence along the Hemavathi has always been an illusion. Here, architecture becomes an act of negotiation rather than control. Conceived as a constellation of pavilions, mandapas, markets, ghats and community spaces woven between the temple and the river, the intervention unfolds as a gradual journey through a landscape of thresholds. Programs emerge from the life of the village itself which included ritual gatherings, seasonal markets, statue offerings, communal celebrations, rest and observation. Movement through the site is shaped by seasonal water calendars, spiritual energy fields and collective memory, transforming the riverfront into a living archive of stories, rituals and return.</p>
           </div>
-          <img loading="lazy" src="assets/projects/neeradi/sections-2.png" alt="Sections 2" class="nr_sections2_img" />
+          <img loading="lazy" src="assets/projects/neeradi/sections-2b.png" alt="Sections 2" class="nr_sections2_img" />
         </div>
       </div>
 
@@ -136,11 +136,11 @@
         <div class="nr_renders2_row">
           <div class="nr_render_cell">
             <img loading="lazy" src="assets/projects/neeradi/render-4.png" alt="Render 4" />
-            <span class="nr_render_label">Community Space â€” Summer Extension</span>
+            <span class="nr_render_label">Community Space — Summer Extension</span>
           </div>
           <div class="nr_render_cell">
             <img loading="lazy" src="assets/projects/neeradi/render-5.png" alt="Render 5" />
-            <span class="nr_render_label">Statue Pavilions â€” During Monsoon</span>
+            <span class="nr_render_label">Statue Pavilions — During Monsoon</span>
           </div>
         </div>
         <div class="nr_renders2_row">
