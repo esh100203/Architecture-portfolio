@@ -127,7 +127,7 @@
             <p>A spiritual energy mapping traces the patterns of movement and gathering across different times of the day. The Temple, Market Space and Community Space emerged as primary nodes of activity, informing the placement of ancillary pavilions. Their locations were further refined through the site's terrain, hydrology, vegetation and visual connections, creating a framework that responds simultaneously to human activity, ecological systems and the cultural landscape.</p>
             <p>The design strategy draws from the understanding that permanence along the Hemavathi has always been an illusion. Here, architecture becomes an act of negotiation rather than control. Conceived as a constellation of pavilions, mandapas, markets, ghats and community spaces woven between the temple and the river, the intervention unfolds as a gradual journey through a landscape of thresholds. Programs emerge from the life of the village itself which included ritual gatherings, seasonal markets, statue offerings, communal celebrations, rest and observation. Movement through the site is shaped by seasonal water calendars, spiritual energy fields and collective memory, transforming the riverfront into a living archive of stories, rituals and return.</p>
           </div>
-          <img loading="lazy" src="assets/projects/neeradi/sections 2b.jpg" alt="Sections 2" class="nr_sections2_img" />
+          <img loading="lazy" src="assets/projects/neeradi/sections 2b.png.jpg" alt="Sections 2" class="nr_sections2_img" />
         </div>
       </div>
 
